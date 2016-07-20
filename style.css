@@ -1,0 +1,49 @@
+
+body, html{
+overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, body, p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#main-menu a{
+    color: white;
+}
+#main-menu a:hover{
+    color: black;
+    background: white;
+    opacity: .5;
+}
+#home{
+    background: url('../img/caring1.png') center center no-repeat fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+    height: 100%;
+    margin-top: 51px;
+}
+.caption container{
+    text-align: center;
+    position: absolute;  
+    height: 100%; 
+    width: 742px; 
+    top: 20px; 
+    margin-top: 80%;
+    z-index: 0; 
+    opacity: 1; 
+    background-position: 50% 0px;
+}
+#first .btn{
+background: transparent;
+height: 10%;
+color: White;
+border: 3px solid white;
+padding-top: 20px;
+margin-top: 20%;
+
+}
+.caption .button{
+text-align: center;
+    
+}
