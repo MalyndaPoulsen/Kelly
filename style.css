@@ -6,8 +6,15 @@ h1, h2, h3, h4, h5, body, p{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+nav{
+margin-bottom: 0px;
+padding-bottom: 0;
+}
 #main-menu a{
     color: white;
+ padding-top: 25px;
+ padding-bottom: 25px;
+ margin-bottom: -15px;
 }
 #main-menu a:hover{
     color: black;
@@ -46,9 +53,16 @@ padding-top: 20px;
 margin-top: 20%;
 
 }
+#about h2{
+    color: Black;
+}
 .caption .button{
 text-align: center;
     
+}
+.services-container h1, h2{
+
+    color: white;
 }
 #services{
         background: url('../img/caringChess.png') center center no-repeat fixed;
@@ -61,13 +75,38 @@ text-align: center;
     position: relative;
 }
 .services div{
-    margin: 60 15;
-    text-align: center;
-    background: grey;
+    
+ /*margin-top: 60px;
+    margin-left: 10;
+    margin-right: 10;*/
+    padding: 10 10 10 10;
 }
 .services i{
     width: 100%;
     margin-top: 20px;
     color: white;
 
+}
+.slides-control{
+    text-align: center;
+}
+#slides{
+    position: relative; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 764px;
+    background-color:#B3DBD9;
+}
+#philosophy{
+            background: url('../img/caring3.png') center center no-repeat fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+    height: 100%;
+    margin-top: 51px;
+    position: relative;
+}
+.space{
+      background: #84A2A0;
 }
