@@ -1,3 +1,3 @@
-(function(){
-    angular.module('Kelly', [])
+;(function(){
+    angular.module('Kelly',[])
 }())
