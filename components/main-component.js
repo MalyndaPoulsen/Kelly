@@ -19,6 +19,7 @@
         });
     // $('#plumbbob').animateCss('bounceInDown')
     $('#scroller').animateCss('flash');
+    $('#heading').animateCss('slideInLeft')
 
 
 

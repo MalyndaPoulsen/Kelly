@@ -6,7 +6,6 @@
 .module, .module-sm, .module-xs {
     background-color: #fff;
     /*background-attachment: fixed;*/
-    padding-top: 70px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,77 +15,44 @@
     background-size: cover;
 }
 
-body {
-    background: white;
-     font-family: 'Slabo 27px', serif;
-    line-height: 1.8;
-    font-size: 12px;
-    -ms-overflow-style: scrollbar;
-    /*overflow-x: hidden;*/
+.about img{
+    width: 99%;
+    margin-top: 4%;
+    /*padding-right: 5px;
+    padding-left: 5px;*/
 }
 .about h2{
-    margin-top: 5%;
+    text-align: center;
+    margin-top: 0%;
     padding-top: 0;
     color: #b4a755;
     font-family: 'Slabo 27px', serif;
 }
+@media only screen and (max-width: 767px){
 .about p{
-   
-          font-family: 'Slabo 27px', serif;
-     color: grey; 
+     text-align: center;
+  
+    font-family: 'Slabo 27px', serif;
+     color: lightgrey; 
+     margin-bottom: 10%;
+     /*font-size: 1.5vw;*/}
+}
+/*screens bigger than 768*/
+@media only screen and (min-width: 768px) {
+    .about p{
+     text-align: right;
+  
+    font-family: 'Slabo 27px', serif;
+      color: lightgrey; 
      margin-bottom: 10%;
      /*font-size: 1.5vw;*/
 }
+}
+
 #about{
-   padding-top: 44px;
    padding-bottom: 15px;
-   /*margin-top: 25%;*/
-   background-color: #325660;
-   color: white;
+   background-color:  white;
    margin-bottom: 0px;
 }
-#shop{
-    background:black url('/Winery/img/plumb3.jpg') center center no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-   height: 100%;
-  
-}
 
 
- /*For devices 400px and larger: */
-@media only screen and (min-width: 981px) {
-    #shop{ 
-        background: url('/Winery/img/plumb2.jpg') center center no-repeat fixed; 
-         -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-    }
-}
-
- #shop h1{
-        font-family: 'Satisfy', cursive;
-      font-size: 4vw;
-     position: absolute;
-   top: 0vw;
-   left: 2vw;
-      color: lightgrey;
- }
- #shop p{
-     color: grey;
-      font-family: 'Slabo 27px', serif;
-       font-size: 1.5vw;
-       position: absolute;
-       top: 1px;
-       left: 2vw;
- }
- #logo img{
-    
-    height: 57vw;
-    position: absolute;
-    right: 50%;
-    top: 0vw;
- }
