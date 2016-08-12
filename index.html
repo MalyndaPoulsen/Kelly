@@ -88,13 +88,13 @@
 
                     <ul style="position: relative; z-index: 9999;" class="nav navbar-nav navbar-right hidden-sm hidden-xs">
 
-                        <li><a href="#main" class="section-scroll">Home</a></li>
+                        <li><a ui-sref="#main" class="section-scroll">Home</a></li>
 
-                        <li><a href="#about" class="section-scroll">About</a></li>
-                        <li><a href="#service" class="section-scroll">Services</a></li>
-                        <li><a href="#team" class="section-scroll">OurTeam</a></li>
-                        <li><a href="#join" class="section-scroll">Join</a></li>
-                        <li><a href="#contact" class="section-scroll">Contact</a></li>
+                        <li><a ui-sref="#about" class="section-scroll">About</a></li>
+                        <li><a ui-sref="#service" class="section-scroll">Services</a></li>
+                        <li><a ui-sref="#team" class="section-scroll">OurTeam</a></li>
+                        <li><a ui-sref="#join" class="section-scroll">Join</a></li>
+                        <li><a ui-sref="#contact" class="section-scroll">Contact</a></li>
 
 
                     </ul>
@@ -122,12 +122,14 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.js"></script>
 
     <script src="app.js"></script>
+  <script src="route.js"></script>
 
     <script src="components/main-component.js"></script>
     <script src="components/about-component.js"></script>
@@ -135,6 +137,8 @@
     <script src="components/team-component.js"></script>
     <script src="components/join-component.js"></script>
     <script src="components/contact-component.js"></script>
+
+   <script src="components/login.js"></script>
 
 
 </body>

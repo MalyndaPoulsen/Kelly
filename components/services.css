@@ -1,5 +1,5 @@
 #services{
-   background: url('/img/caringChess.png') center center no-repeat fixed;
+   background: url('/img/caringChess2.png') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,18 +39,20 @@
 #service p{
     margin-bottom: 30px;
      font-family: 'Slabo 27px', serif;
-     margin-bottom: 20%;
+     margin-bottom: 10%;
      color: grey; 
 }
 #service h2{
         color: #b4a755;
      font-family: 'Slabo 27px', serif;
-   
-  
+
+ 
 }
-#mugs .img{
-    margin-left: 0;
-    margin-right: 0;
+#care{
+ background: #C3D6DB;
+padding-left: 2px;
+padding-right: 2px;
+margin: 1 1 1 1;
 }
 #services .btn{
     background: #b4a755;
@@ -58,5 +60,6 @@
      margin-bottom: 10%;
 }
 #service{
-    margin-top: 15%;
+    padding-top:5%;
+    padding-bottom: 10%;
 }

@@ -20,21 +20,21 @@
     color: white;
     border: none;
 }
-.bar{
+/*.bar{
     position: relative;
     top: 0vw;
     left: 0vw;
     background: white;
     height: 50%;
-}
+}*/
 #contactback h5{
     color: grey;
       font-family: 'Slabo 27px', serif;
 }
 #contact2{
-    margin-top: 20%;
+   
     background: white;
-    margin-top: 46%;
+    /*margin-top: 46%;*/
 }
 #contact2 label{
     color: grey;
