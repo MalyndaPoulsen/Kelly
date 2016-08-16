@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="components/team.css">
     <link rel="stylesheet" href="components/main.css">
    <link rel="stylesheet" href="components/services.css">
+  <link rel="stylesheet" href="components/auth.css">
 
 
 
@@ -88,13 +89,13 @@
 
                     <ul style="position: relative; z-index: 9999;" class="nav navbar-nav navbar-right hidden-sm hidden-xs">
 
-                        <li><a ui-sref="#main" class="section-scroll">Home</a></li>
+                        <li><a ui-sref="home" class="section-scroll">Home</a></li>
 
-                        <li><a ui-sref="#about" class="section-scroll">About</a></li>
-                        <li><a ui-sref="#service" class="section-scroll">Services</a></li>
-                        <li><a ui-sref="#team" class="section-scroll">OurTeam</a></li>
-                        <li><a ui-sref="#join" class="section-scroll">Join</a></li>
-                        <li><a ui-sref="#contact" class="section-scroll">Contact</a></li>
+                        <li><a ui-sref="about" class="section-scroll">About</a></li>
+                        <li><a ui-sref="services" class="section-scroll">Services</a></li>
+                        <li><a ui-sref="team" class="section-scroll">OurTeam</a></li>
+                        <li><a ui-sref="join" class="section-scroll">Join</a></li>
+                        <li><a ui-sref="contact" class="section-scroll">Contact</a></li>
 
 
                     </ul>
@@ -109,7 +110,7 @@
     <!-- /.container-fluid -->
 
 
-
+<ui-view></ui-view>
 
     <main-component></main-component>
     <about-component></about-component>
@@ -117,7 +118,24 @@
     <team-component></team-component>
     <join-component></join-component>
     <contact-component></contact-component>
+   <auth-component></auth-component>
 
+<div class="bottom">
+         <div class="btn-group">
+  <button type="button" class="btn btn-lg">Join Our Team</button>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
+  About Us <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a ui-sref="#">About</a></li>
+      <li><a ui-sref="#">Services</a></li>
+      <li><a ui-sref="#">Our Team</a></li>
+        <li><a ui-sref="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+</div>
 
 
 
@@ -127,10 +145,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
     <script src="app.js"></script>
   <script src="route.js"></script>
 
+   <script src="components/auth-component.js"></script>
     <script src="components/main-component.js"></script>
     <script src="components/about-component.js"></script>
    <script src="components/services-component.js"></script>
@@ -138,7 +158,11 @@
     <script src="components/join-component.js"></script>
     <script src="components/contact-component.js"></script>
 
-   <script src="components/login.js"></script>
+
+
+   <!--<script src="components/join-service.js"></script>-->
+
+   <!--<script src="components/login-component.js"></script>-->
 
 
 </body>

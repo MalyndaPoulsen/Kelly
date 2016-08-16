@@ -21,6 +21,17 @@ font-family: 'PT Sans', sans-serif;
   z-index: 999;
 
 }
+#main{
+    position: relative;
+}
+.bottom{
+    position: fixed;
+    background-color: #325660; 
+}
+.bottom .btn{
+   
+    background-color: #325660;
+}
 #main2 img{
 
   height: 30vw;

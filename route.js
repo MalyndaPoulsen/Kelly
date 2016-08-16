@@ -1,5 +1,5 @@
 angular.module("Kelly")
-.config(function($stateProvider){
+.config(function($stateProvider, $urlRouterProvider){
     $stateProvider
     
        .state('home',{
@@ -14,12 +14,12 @@ angular.module("Kelly")
         controllerAs: 'jc'
     })
  
-    .state('login',{
-        url: '/login',
-        templateUrl: 'components/login.html',
-        controller: 'LoginController',
-        controllerAs: 'lc'
-    }) 
+    // .state('login',{
+    //     url: '/login',
+    //     templateUrl: 'components/login.html',
+    //     controller: 'LoginController',
+    //     controllerAs: 'lc'
+    // }) 
 
  .state('team',{
         url: '/team',
