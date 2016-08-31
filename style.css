@@ -21,6 +21,22 @@ font-family: 'PT Sans', sans-serif;
   z-index: 999;
 
 }
+#joinBtn{
+ border: 3px solid white; 
+ border-radius: 4px;
+ height: 10%;
+ width: 20%;
+  z-index: 77;
+  text-align: center;
+  position: fixed;
+  top: 70%;
+  left: 40%;
+  font-size: 4.5vw;
+
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+}
 #main{
     position: relative;
 }
@@ -121,7 +137,7 @@ font-family: 'PT Sans', sans-serif;
     z-index: 9999;
        color: #C3D6DB;
     padding-top: 3vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
    
 }
 
