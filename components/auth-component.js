@@ -1,92 +1,51 @@
-(function() {
+(function () {
 
     angular.module('Kelly')
         .component('authComponent', {
             templateUrl: 'components/auth-component.html',
             controller: AuthController
         })
-        .factory('User', function(DS) {
-            return DS.defineResource({
-                name: 'user',
-                endpoint: 'users'
-            });
-        })
-        .factory('AuthService', function(DSFirebaseAdapter, User) {
-            var db = DSFirebaseAdapter.ref;
-            var _member = {}
-            return {
-                register: register,
-                login: login,
-                logout: function() {
-                    db.unauth();
-                    _member = {};
-                },
-                getMember: authMember,
-                getAuth: function() {
-                    return db.getAuth();
-                }
-            }
-            
-            function authMember() {
-                var authData = db.getAuth();
-                if (!authData) {
-                    return false;
-                }
-                setMember(authData.uid);
-                return _member
-            }
+        .service('AuthService', function () {
+            var config = {
+                apiKey: "AIzaSyAqOtuRlryQLY6X6WU7wGIhaSQznvNlTMk",
+                authDomain: "kelly-f0dd6.firebaseapp.com",
+                databaseURL: "https://kelly-f0dd6.firebaseio.com"
+            };
+            firebase.initializeApp(config);
 
-            function setMember(id) {
-                return User.find(id).then(function(member) {
-                    Object.keys(member).forEach(function(k) {
-                        _member[k] = member[k]
-                    })
+            var auth = firebase.auth();
+            var db = firebase.database(); 
+
+            this.login = function (user, cb) {
+                auth.signInWithEmailAndPassword(user.email, user.password).then(function(authData){
+                    return cb(authData);
                 })
             }
 
-            function createUser(authData, user) {
-                var member = {
-                    id: authData.uid,
-                    username: user.username,
-                    email: user.email,
-                    created: Date.now()
-                }
-                User.create(member);
+            this.getMember = function(){
+                return
             }
 
-            function login(user, cb) {
-                db.authWithPassword(user, function(err, authData) {
-                    if (err) {
-                        return cb(null, err)
-                    }
-                    return cb(authMember());
-                })
+            this.join = function(user){
+                db.ref('applicants').push(user);
             }
-            function register(user, cb) {
-                db.createUser(user, function(err, authData) {
-                    if (err) {
-                        return cb(null, err)
-                    }
-                    createUser(authData, user);
-                    login(user, cb)
-                });
+
+            this.getApplicants = function(cb){
+                db.ref('applicants').on('value', function(snapshot){
+                    cb(snapshot.val());
+                })
             }
         })
 
     function AuthController($scope, $state, AuthService) {
         var ac = this;
         ac.member = AuthService.getMember();
-        ac.login = function() {
+        ac.login = function () {
             clearErr();
-            AuthService.login(ac.auth, handleDBResponse);
+            AuthService.login(ac.auth, handleDBResponse, handleError);
         };
 
-        ac.register = function() {
-            clearErr();
-            AuthService.register(ac.auth, handleDBResponse);
-        };
-
-        ac.logout = function() {
+        ac.logout = function () {
             clearErr();
             AuthService.logout();
             ac.member = {};
@@ -99,15 +58,14 @@
             ac.authErr = '';
         }
 
-        function handleDBResponse(member, err) {
+        function handleDBResponse(member) {
             if (member) {
                 ac.member = member;
-                ac.activeView = ''
-            } 
-            if(err) {
-                ac.error = err.message;
+                $state.go('applicants');
             }
-            update()
+        }
+        function handleError(err){
+            ac.error = err.message;
         }
     }
-}())
+} ())

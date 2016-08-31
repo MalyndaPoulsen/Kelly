@@ -1,12 +1,17 @@
 (function () {
     angular.module('Kelly')
         .component('joinComponent', {
-            templateUrl: 'components/join-component.html',
-          controller: JoinController,
-          controllerAs: 'jc'
+            templateUrl: 'components/join.html',
+            controller: JoinController
         })
-function JoinController(){
-    const jc = this;
-}
+    function JoinController(AuthService) {
+        const jc = this;
+        jc.join = function (user) {
+            if(user){
+                user.applied = Date.now();
+                AuthService.join(user);
+            }
+        }
+    }
 
-}());
+} ());

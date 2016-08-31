@@ -3,45 +3,18 @@ angular.module("Kelly")
     $stateProvider
     
        .state('home',{
-        url: '',
-        templateUrl: 'components/main-component.html'
+        url: '/',
+        templateUrl: 'components/home.html'
     })
-   
     .state('join',{
         url: '/join',
-        templateUrl: 'components/join-component.html',
-        controller: 'JoinController',
-        controllerAs: 'jc'
+        template: '<join-component></join-component>'
     })
- 
-    // .state('login',{
-    //     url: '/login',
-    //     templateUrl: 'components/login.html',
-    //     controller: 'LoginController',
-    //     controllerAs: 'lc'
-    // }) 
+    .state('applicants',{
+        url: '/applicants',
+        template: '<applicants-component></applicants-component>'
+    })
 
- .state('team',{
-        url: '/team',
-        templateUrl: 'components/team-component.html',
-
-    }) 
-
- .state('services',{
-        url: '/services',
-        templateUrl: 'components/services-component.html',
-
-    }) 
-     .state('about',{
-        url: '/about',
-        templateUrl: 'components/about-component.html',
-
-    }) 
-     .state('contact',{
-        url: '/contact',
-        templateUrl: 'components/contact-component.html',
-
-    }) 
-
+    $urlRouterProvider.otherwise('/')
 
 })

@@ -1,7 +1,7 @@
 // ;(function () {
 //     angular.module('Kelly')
 //         .component('loginComponent', {
-//             templateUrl: 'components/login-component.html',
+//             templateUrl: 'components/login.html',
 //           controller: LoginController,
 //           controllerAs: 'ac'
 //         })

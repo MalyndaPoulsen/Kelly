@@ -1,6 +1,7 @@
 (function () {
 
-	angular.module('Kelly', ['ui.router', 'firebase']);
+	angular.module('Kelly', ['ui.router']);
 
 
 }());
+// , 'firebase'
