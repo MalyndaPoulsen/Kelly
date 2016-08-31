@@ -40,7 +40,7 @@
 /*screens bigger than 768*/
 @media only screen and (min-width: 768px) {
     .about p{
-     text-align: right;
+     text-align: center;
   
     font-family: 'Slabo 27px', serif;
       color: lightgrey; 
