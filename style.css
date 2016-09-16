@@ -133,12 +133,13 @@ font-family: 'PT Sans', sans-serif;
    }
 
 .navbar-nav>li>a {
-  position: relative;
+    position: relative;
     z-index: 9999;
-       color: #C3D6DB;
+    color: #b7ac68;
+    background: #325660;
     padding-top: 3vw;
     font-size: 1.5vw;
-   
+    width: 10%;
 }
 
 
