@@ -8,7 +8,8 @@ input{
 .container label{
     margin-top: 3%;
     margin-bottom: 1%;
-    font-size: 2vw;
+    color: lightgrey;
+    /*font-size: 2vw;*/
 }
 form span{
         margin-top: 2%;
