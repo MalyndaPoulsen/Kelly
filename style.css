@@ -83,6 +83,9 @@ font-family: 'PT Sans', sans-serif;
     font-size: 1.5vw;
     width: 10%;
 }
+.navbar-nav>li>a:active {
+background-color: none;
+}
 
 
 /*subnav*/

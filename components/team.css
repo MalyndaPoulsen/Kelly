@@ -1,13 +1,12 @@
-#team{
-   
-    color: darkgrey;
+#founder{
+    color: lightgrey;
    padding-top: 5%;
    padding-bottom: 10%;
 }
 .module, .module-sm, .module-xs {
     background-color:  #325660;
     background-attachment: fixed;
-    padding-top: 70px;
+    padding-top: 100px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -15,12 +14,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+     color: lightgrey;
 }
-#team h2{
+#founder h2{
     color: #b4a755;
      font-family: 'Slabo 27px', serif;
 }
-#team p{
+#founder p{
     margin-bottom: 30px;
      font-family: 'Slabo 27px', serif;
 }
@@ -32,4 +32,7 @@
     background: #b4a755;
     color: black;
      margin-bottom: 10%;
+}
+#founder{
+    padding-top: 13%;
 }

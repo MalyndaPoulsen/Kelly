@@ -6,7 +6,7 @@
         })
     function ContactController() {
         var cc = this;
-        // var kellyRef = new Firebase("https://")
+      
     }
 
 } ());
