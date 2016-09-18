@@ -75,6 +75,7 @@ font-family: 'PT Sans', sans-serif;
    }
 
 .navbar-nav>li>a {
+  text-align: left;
     position: relative;
     z-index: 9999;
     color: #b7ac68;
