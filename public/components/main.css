@@ -4,7 +4,7 @@ body, html{
     overflow-x: hidden;
 }
 #main2{
-     background: url('/img/caring1.png') center center no-repeat fixed; 
+     background: url('/img/caring1.jpg') center center no-repeat fixed; 
      z-index: -22;
       -webkit-background-size: cover;
  -moz-background-size: cover;
