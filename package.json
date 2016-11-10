@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/MalyndaPoulsen/Kelly#readme",
   "engines": {
-    "node": "^6"
+    "node": "^6",
+    "npm": "^3"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
