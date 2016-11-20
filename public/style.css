@@ -11,7 +11,8 @@
      overflow-y: hidden;
   }
   body, p, li, a, html{
-font-family: 'PT Sans', sans-serif;
+/*font-family: 'PT Sans', sans-serif;*/
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 .navbar-fixed-top {
  /*margin-right: -15px;*/
