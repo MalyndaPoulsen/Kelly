@@ -80,13 +80,13 @@ margin-top: 5%;
 .joiner a{
    display: block;
   position: relative;
-  padding-top: 5px;
+  padding-top: 9px;
 }
 .joiner a:hover{
     color: grey !important;
    display: block;
   position: relative;
-  padding-top: 5px;
+  padding-top: 9px;
 }
     #joinBtn{
     /*border: 3px solid white;
@@ -334,7 +334,7 @@ animation-duration: 2s;
 animation-delay: 2s;
 animation-iteration-count: 5;
 position: absolute;
-bottom: -8%;
+bottom: 2%;
 left: 52%;
 font-size: 2vw;
 }
@@ -440,7 +440,8 @@ and (max-device-width : 736px)
     text-shadow: 1px 1px 2px #000000;
 }
   #joinBtn{
-
+ /*border: 3px solid white; 
+ border-radius: 4px;*/
  height: 10%;
  width: 20%;
   z-index: 0;
@@ -560,7 +561,7 @@ margin-top: 2%;
   text-align: center;
   position: relative;
   top: 0%;
-    left: 43%;
+    left: 41%;
   font-size: 4.5vw;
 
  background: rgba(255, 255, 255, 0.7) ;
@@ -573,7 +574,7 @@ animation-duration: 2s;
 animation-delay: 2s;
 animation-iteration-count: 5;
 position: absolute;
-bottom: -8%;
+bottom: 2%;
 left: 52%;
 font-size: 2vw;
 }
