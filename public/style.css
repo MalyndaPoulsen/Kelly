@@ -9,38 +9,21 @@
   /*body { padding-bottom: 70px; }*/
   body{
      overflow-y: hidden;
+     background-color: transparent;
   }
-  body, p, li, a, html{
+  body, p, li, a, html, h1, h2, h3, h4, b{
 /*font-family: 'PT Sans', sans-serif;*/
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
   }
-.navbar-fixed-top {
- /*margin-right: -15px;*/
-  position: fixed;
-  border-radius: 0;
-  height: 4.5vw;
-  z-index: 999;
-
+.main-nav ul{
+  padding-left: 0px;
 }
-/*#joinBtn{
- border: 3px solid white; 
- border-radius: 4px;
- height: 10%;
- width: 20%;
-  z-index: 77;
-  text-align: center;
-  position: fixed;
-  top: 70%;
-  left: 40%;
-  font-size: 4.5vw;
 
-  background-color: white;
-  opacity: 0.5;
-  color: black;
-}*/
-#main{
+
+/*#main{
     position: relative;
-}
+}*/
 .bottom{
     position: fixed;
     background-color: #325660; 
@@ -49,45 +32,109 @@
    
     background-color: #325660;
 }
-#main2 img{
+/*#main2 img{
 
   height: 30vw;
   position: absolute;
   top: 4vw;
   left: 80vw;
    z-index: 33;
-}
+}*/
 
 
 
 
-.nav>li{
+/*.nav>li{
  color: #C3D6DB;
     padding-right: 2vw;
-}
+}*/
    .nav {
     text-align: right;
       padding-right: 2vw;
   
    }
-   .nav a:hover{
-       background-color:transparent !important;
+   /*.nav a:hover{
+       background-color:#325660 !important;
       color:#b7ac68;
-   }
-
-.navbar-nav>li>a {
-  text-align: left;
+   }*/
+  .navbar-nav>li>a{
+        text-align: left;
     position: relative;
     z-index: 9999;
     color: #b7ac68;
-    background: #325660;
-    padding-top: 3vw;
-    font-size: 1.5vw;
-    width: 10%;
+    background-color: #325660;
+  
+       font-size: 1.5vw;
+    margin-top: 1.5vw;
+   padding-top: 1.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+    .navbar-nav>li>a:hover{
+   
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+    /*padding-top: 3vw;*/
+         margin-top: 1.5vw;
+      padding-top: 1.25vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+      .navbar-nav>li>a:active{
+ 
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+    /*padding-top: 3vw;*/
+       font-size: 1.5vw;
+           margin-top: 1.5vw;
+    padding-top: 1.25vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  
+    margin-bottom: auto;
+  }
+
+.navbar-fixed-top {
+ /*margin-right: -15px;*/
+  position: fixed;
+  border-radius: 0;
+  height: 4.5vw;
+  z-index: 999;
+
 }
-.navbar-nav>li>a:active {
+.navbar-collapse {
+  margin-top: 0px;
+ margin-right: 2%;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+     box-shadow: inset 0 1px 0 rgba(255,255,255,.5); 
+}
+.navbar-collapse ul{
+  margin-top: 0px;
+}
+/*.navbar-nav>li>a:active {
 background-color: none;
-}
+color: white;
+}*/
 
 
 /*subnav*/
@@ -114,6 +161,336 @@ padding-bottom: 5px;
  padding-left: 5px;
  padding-bottom: 5px;
 }
+
+@media only screen and (min-width: 1020px) {
+  .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+  
+       font-size: 1.5vw;
+    margin-top: 1.5vw;
+   padding-top: 1.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+    .navbar-nav>li>a:hover{
+   
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+    /*padding-top: 3vw;*/
+         margin-top: 1.5vw;
+      padding-top: 1.25vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+      .navbar-nav>li>a:active{
+ 
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+    /*padding-top: 3vw;*/
+       font-size: 1.5vw;
+           margin-top: 1.5vw;
+    padding-top: 1.25vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    width: 100%;
+    margin-left: 0px;
+  
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+           margin-top: .75vw;
+    padding-top: 1vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+    .navbar-nav>li>a:hover{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+            margin-top: .75vw;
+    padding-top: 1vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+      .navbar-nav>li>a:active{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+            margin-top: .75vw;
+    padding-top: 1vw;
+    padding-bottom: auto;
+     padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+}
+@media only screen and (max-width: 414px) {
+  .navbar-collapse {
+    max-height: 400px !important;
+}
+  .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+            margin-top: 1vw;
+   padding-top: 7vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+    .navbar-nav>li>a:hover{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+         margin-top: 1vw;
+   padding-top: 7vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+      .navbar-nav>li>a:active{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+        margin-top: 1vw;
+   padding-top: 7vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+
+}
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+   .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+    margin-top: 1.5vw;
+   padding-top: 2.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+    .navbar-nav>li>a:hover{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+      margin-top: 1.5vw;
+   padding-top: 2.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+      .navbar-nav>li>a:active{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+        margin-top: 1.5vw;
+   padding-top: 2.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 1.25vw;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+/*Ipad */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+  and (-webkit-min-device-pixel-ratio: 3){ 
+  .navbar-collapse {
+    max-height: 450px !important;
+}
+  .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+         margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+    height: 130%;
+  }
+    .navbar-nav>li>a:hover{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+         margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+      .navbar-nav>li>a:active{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+        margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+}
+
+
+
+/*iphone 6*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (-webkit-min-device-pixel-ratio: 2){ 
+   .navbar-collapse {
+    max-height: 450px !important;
+}
+  .navbar-nav>li>a{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: #b7ac68;
+    background-color: #325660;
+        margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+    .navbar-nav>li>a:hover{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+        margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+      .navbar-nav>li>a:active{
+        text-align: left;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    background-color: #325660;
+        margin-top: 1vw;
+   padding-top: 5.25vw;
+    padding-bottom: auto;
+    padding-right: 1.25vw;
+     padding-left: 4.25vw;
+  
+    font-size: 3.5vw;
+    width: 25%;
+    margin-left: 0px;
+     height: 130%;
+  }
+}
+
 
 
 

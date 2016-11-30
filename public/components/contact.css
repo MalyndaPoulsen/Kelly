@@ -3,7 +3,7 @@
     margin-top: 10%;
     padding-top: 20%;
     color: #b4a755;
-    font-family: 'Slabo 27px', serif;
+    /*font-family: 'Slabo 27px', serif;*/
   
 }
 #contactback{
@@ -28,7 +28,7 @@
 }
 #contactback h5{
     color: grey;
-      font-family: 'Slabo 27px', serif;
+      /*font-family: 'Slabo 27px', serif;*/
 }
 #contact2{
    
@@ -66,7 +66,7 @@
 .end{
     background: #325660;
     color:  #b4a755;
-    font-family: 'Slabo 27px', serif;
+    /*font-family: 'Slabo 27px', serif;*/
     z-index: 88;
     top: 350%;
     left: 0%;
@@ -76,14 +76,15 @@
     text-align: center;
 }
 form{
-    padding-top: 10%;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .row{
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 .end p, i{
-      font-family: 'Slabo 27px', serif;
+      /*font-family: 'Slabo 27px', serif;*/
     margin-top: 2vw;
 
 }
@@ -108,7 +109,7 @@ font-size: 3vw;
 
 }
 .me{
-    font-family: 'Slabo 27px', serif;
+    /*font-family: 'Slabo 27px', serif;*/
     text-align: center;
     font-size: 2vw;
    /*margin-bottom: 5%;*/
@@ -120,6 +121,96 @@ font-size: 3vw;
     text-align: center;
 }
 
+@media only screen and (min-width: 1020px){
+    
+}
+@media only screen and (max-width: 768px){
+    .end p, h5{
+          font-size: 3vw;
+    }
+    /*#contacts{
+   margin-bottom: 5%;
+    }*/
+    .me{
+        font-size: 3vw;
+    }
+    .me a{
+        font-size: 5vw;
+    }
+}
+@media only screen and (max-width: 414px){
+#contacts{
+   margin-bottom: 5%;
+    }
+    .me{
+        font-size: 5vw;
+    }
+    .me a{
+        font-size: 7vw;
+    }
+      #contactback h3, h5{
+          font-size: 5vw;
+    }
+    .end p{
+          font-size: 5vw;
+    }
+}
+@media only screen and (max-width: 360px){
+#contacts{
+   margin-bottom: 5%;
+    }
+    .me{
+        font-size: 4vw;
+    }
+    .me a{
+        font-size: 7vw;
+    }
+      #contactback h3, h5{
+          font-size: 5vw;
+    }
+    .end p{
+          font-size: 5vw;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+         #contactback h2{
+          font-size: 5vw;
+    }
+    #contactback h3, h5{
+          font-size: 3vw;
+    }
+    .end p{
+          font-size: 3vw;
+    }
+  }
+  /*Ipad */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+        #contactback h3, h5{
+          font-size: 5vw;
+    }
+    .end p{
+          font-size: 5vw;
+    }
+  }
+
+  /*iphone 6*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (-webkit-min-device-pixel-ratio: 2){ 
+  #contactback h3, h5{
+          font-size: 5vw;
+    }
+    .end p{
+          font-size: 5vw;
+    }
+}
 
 
 /*new contact sheet*/
