@@ -1,3 +1,3 @@
 (function(){
-    angular.module('Kelly',['ui.router'])
+    angular.module('gocarefinder',['ui.router'])
 }())
