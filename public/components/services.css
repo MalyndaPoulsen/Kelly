@@ -495,6 +495,17 @@ and (max-device-width : 640px) {
 #fade{
             margin-left: 41.234px;
 }
+    #services {
+    background:white url('/img/caring3c.jpg')  no-repeat fixed;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
+ background-size: contain;
+/*margin-top: 5%;*/
+   width: 100%;
+ z-index: -12;
+
+}
 
 }
 @media only screen 
@@ -503,11 +514,23 @@ and (max-device-width : 732px) {
 #fade{
             margin-left: 45.234px;
 }
+    #services {
+    background:white url('/img/caring3c.jpg')  no-repeat fixed;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
+ background-size: contain;
+/*margin-top: 5%;*/
+   width: 100%;
+ z-index: -12;
+
+}
 
 }
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
 { 
     #services {
     background:white url('/img/caring3c.jpg')  no-repeat fixed;
