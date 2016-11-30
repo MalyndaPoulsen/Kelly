@@ -440,8 +440,7 @@ and (max-device-width : 736px)
     text-shadow: 1px 1px 2px #000000;
 }
   #joinBtn{
- /*border: 3px solid white; 
- border-radius: 4px;*/
+
  height: 10%;
  width: 20%;
   z-index: 0;
