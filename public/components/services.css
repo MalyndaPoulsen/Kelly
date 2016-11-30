@@ -158,9 +158,9 @@ left: 50%;
 }
    #services {
     background:white url('/img/caring3b.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -208,9 +208,9 @@ left: 50%;
 }
 #services {
     background:white url('/img/caring3b.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -253,9 +253,9 @@ left: 50%;
 }
 #services {
     background:white url('/img/caring3b.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -301,9 +301,9 @@ left: 50%;
 }
 #services {
     background:white url('/img/caring3b.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -350,9 +350,9 @@ and (max-device-width : 736px)
 }
 #services {
     background:white url('/img/caring3b.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -397,9 +397,9 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
     #services {
     background:white url('/img/caring3c.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
@@ -448,9 +448,9 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
 #services {
     background:white url('/img/caring3c.jpg')  no-repeat fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
  background-size: contain;
 /*margin-top: 5%;*/
    width: 100%;
