@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('Kelly')
+    angular.module('gocarefinder')
         .component('applicantsComponent', {
             templateUrl: 'components/applicants-component.html',
             controller: ApplicantsController

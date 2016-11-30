@@ -1,4 +1,4 @@
-angular.module("Kelly")
+angular.module("gocarefinder")
 .config(function($stateProvider, $urlRouterProvider){
     $stateProvider
     

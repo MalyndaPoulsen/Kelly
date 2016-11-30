@@ -1,6 +1,6 @@
 
 ;(function () {
-    angular.module('Kelly')
+    angular.module('gocarefinder')
         .component('mainComponent', {
             templateUrl: 'components/main-component.html',
             controller: MainController,

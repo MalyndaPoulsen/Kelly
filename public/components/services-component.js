@@ -1,5 +1,5 @@
 (function () {
-    angular.module('Kelly')
+    angular.module('gocarefinder')
         .component('servicesComponent', {
             templateUrl: 'components/services-component.html',
           controller: ServiceController,

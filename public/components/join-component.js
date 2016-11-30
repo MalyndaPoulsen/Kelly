@@ -1,5 +1,5 @@
 (function () {
-    angular.module('Kelly')
+    angular.module('gocarefinder')
         .component('joinComponent', {
             templateUrl: 'components/join-component.html',
             controller: JoinController

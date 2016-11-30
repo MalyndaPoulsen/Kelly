@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('Kelly')
+    angular.module('gocarefinder')
         .component('authComponent', {
             templateUrl: 'components/auth-component.html',
             controller: AuthController
