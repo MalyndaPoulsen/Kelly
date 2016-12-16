@@ -21,11 +21,9 @@
                 AuthService.join(user);
             }
         }
-    function myAppSent(){
-        console.log(
-            "Your application has been submitted."
-            )
-    }
+function success() {
+    console.log("Your application was submitted. Thank you.")
+    document.getElementById("joinForm").reset();
     }
 
-} ());
+} }());

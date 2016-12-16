@@ -1,6 +1,6 @@
 <div class="container content-container" style="margin-top: 50px;">
     <h1>Join Our Team</h1>
-    <form ng-submit="$ctrl.join($ctrl.user)" class="form">
+    <form id="joinForm" ng-submit="$ctrl.join($ctrl.user)" onclick="success()" value="reset" class="form">
         <input required type="text" class="form-control" ng-model="$ctrl.user.name" placeholder="Full Name">
         <input required type="email" class="form-control" ng-model="$ctrl.user.email" placeholder="Email">
         <input required type="text" class="form-control" ng-model="$ctrl.user.address" placeholder="Address">
@@ -63,6 +63,6 @@
 
  <h5>Resume</h5>
         <textarea required type="text" class="form-control" rows="8" ng-model="$ctrl.user.resume" placeholder="Paste Your Resume"></textarea>
-        <button type="submit" onclick="myAppSent()" style="background-color:#325660; color: white; margin-top: 2%;" class="btn btn-success">Submit Application</button>
+        <button type="submit"  style="background-color:#325660; color: white; margin-top: 2%;" class="btn btn-success">Submit Application</button>
     </form>
 </div>
