@@ -21,6 +21,11 @@
                 AuthService.join(user);
             }
         }
+    function myAppSent(){
+        console.log(
+            "Your application has been submitted."
+            )
+    }
     }
 
 } ());
