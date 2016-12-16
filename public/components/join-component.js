@@ -22,7 +22,7 @@
             }
         }
 function success() {
-    console.log("Your application was submitted. Thank you.")
+    console.log("Your application was submitted. Thank you.");
     document.getElementById("joinForm").reset();
     }
 
