@@ -18,7 +18,7 @@
             update();
               
         });
-        AuthService.removeApplicant(function(index){
+       removeApplicant(function(index){
             ac.applicant.splice(index, 1);
 
         });
