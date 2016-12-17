@@ -18,10 +18,10 @@
             update();
               
         });
-       removeApplicant(function(index){
+       function removeApplicant(index){
             ac.applicant.splice(index, 1);
 
-        });
+        };
    
     }
 
