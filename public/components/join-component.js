@@ -26,7 +26,8 @@
             name: '',
             email: '',
             address: '',
-            phone: ''
+            phone: '',
+            resume: ''
         }
         jc.user.education = {
             degree: '',
@@ -67,7 +68,7 @@
             email3: '',
             relationship3: '',
         }
-        jc.user.resume = ''
+     
 
 
 
