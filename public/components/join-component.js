@@ -19,11 +19,9 @@
             if(user){
                 user.applied = Date.now();
                 AuthService.join(user);
+                 console.log("Your application was submitted. Thank you.");
             }
         }
-function success() {
-    console.log("Your application was submitted. Thank you.");
-    document.getElementById("joinForm").reset();
-    }
+
 
 } }());
