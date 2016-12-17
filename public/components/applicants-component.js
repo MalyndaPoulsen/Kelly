@@ -19,7 +19,7 @@
               
         });
        function removeApplicant(index){
-            ac.applicant.splice(index, 1);
+            ac.applicants.splice(index, 1);
 
         };
    
