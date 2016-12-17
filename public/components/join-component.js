@@ -22,7 +22,7 @@
                 user.applied = Date.now();
                 AuthService.join(user);
                 console.log("Your application was submitted. Thank you.");
-                  init();
+                  initUser();
             }
         }
         function initUser(){
