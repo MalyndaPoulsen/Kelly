@@ -11,10 +11,10 @@
         function update() {
             $scope.$evalAsync();
         }
+       
 
         AuthService.getApplicants(function (applicants) {
             ac.applicants = applicants;
-         console.log(ac.applicants)
             update();
               
         });
