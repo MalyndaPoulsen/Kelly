@@ -13,6 +13,8 @@
     //         }
     //     }
     // }
+
+
     function JoinController(AuthService) {
         const jc = this;
         jc.join = function (user) {
@@ -20,8 +22,11 @@
                 user.applied = Date.now();
                 AuthService.join(user);
                 console.log("Your application was submitted. Thank you.");
+                  init();
             }
         }
+        function initUser(){
+
         jc.user = {
             name: '',
             email: '',
@@ -69,9 +74,8 @@
             relationship3: '',
         }
      
-
-
-
+        }
 
     }
+  
 } ());
