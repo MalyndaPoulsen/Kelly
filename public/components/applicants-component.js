@@ -15,12 +15,13 @@
         AuthService.getApplicants(function (applicants) {
             ac.applicants = applicants;
             update();
+              
         });
-        // AuthService.removeApplicant(function(index){
-        //     ac.applicant.splice(index, 1);
+        AuthService.removeApplicant(function(index){
+            ac.applicants.splice(index, 1);
 
-        // });
-       
+        });
+   
     }
 
 } ())
