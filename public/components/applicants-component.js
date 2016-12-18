@@ -19,8 +19,8 @@
             update();
               
         });
-       ac.removeApplicant= function(applicant){
-            applicants.delete(applicant);
+       ac.removeApplicant= function(index){
+            ac.applicants.splice(index, 1);
             update();
         };
    
