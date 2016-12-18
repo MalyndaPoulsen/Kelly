@@ -15,11 +15,12 @@
 
         AuthService.getApplicants(function (applicants) {
             ac.applicants = applicants;
+            console.log(applicants)
             update();
               
         });
-       ac.removeApplicant= function(index){
-            ac.applicants.splice(index, 1);
+       ac.removeApplicant= function(applicant){
+            applicants.delete(applicant);
             update();
         };
    
