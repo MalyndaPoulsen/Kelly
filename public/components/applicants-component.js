@@ -20,6 +20,7 @@
               
         });
        ac.removeApplicant= function(index){
+           console.log(ac.applicants)
             ac.applicants.splice(index, 1);
             update();
         };
